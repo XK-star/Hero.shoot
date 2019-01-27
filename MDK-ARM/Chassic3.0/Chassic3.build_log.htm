@@ -1,0 +1,145 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.22.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: XY Z, XYZ, LIC=14HGK-ZHSS3-LCHJF-6UJC1-Y5SIP-TKTZX
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.22
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.22
+Dialog DLL:      DARMSTM.DLL V1.67.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+D:\123\RM\英雄\功能模块\测试\Shoot\Chassic3.0\MDK-ARM\Chassic3.0.uvprojx
+Project File Date:  01/24/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Chassic3.0'
+compiling CanBusTask.c...
+..\App\CanBusTask.c(186): warning:  #1-D: last line of file ends without a newline
+  }
+..\App\CanBusTask.c(167): warning:  #177-D: variable "status"  was declared but never referenced
+  	HAL_StatusTypeDef status;
+..\App\CanBusTask.c: 2 warnings, 0 errors
+compiling IOTask.c...
+..\Src\IOTask.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\IOTask.c: 1 warning, 0 errors
+compiling Driver_Gimbal.c...
+..\Driver\DM9015.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\IOTask.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Driver\Driver_Gimbal.c: 2 warnings, 0 errors
+compiling Driver_Chassis.c...
+..\Driver\Driver_Chassis.h(13): warning:  #47-D: incompatible redefinition of macro "LOW_FORWARD_BACK_SPEED"  (declared at line 26 of "..\MDK-ARM\Commondefine.h")
+  #define LOW_FORWARD_BACK_SPEED 				200
+..\Driver\Driver_Chassis.h(14): warning:  #47-D: incompatible redefinition of macro "LOW_LEFT_RIGHT_SPEED"  (declared at line 27 of "..\MDK-ARM\Commondefine.h")
+  #define LOW_LEFT_RIGHT_SPEED   				150
+..\Src\IOTask.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Driver\Driver_Chassis.c: 3 warnings, 0 errors
+compiling ControlTask.c...
+..\Driver\Driver_Chassis.h(13): warning:  #47-D: incompatible redefinition of macro "LOW_FORWARD_BACK_SPEED"  (declared at line 26 of "..\MDK-ARM\Commondefine.h")
+  #define LOW_FORWARD_BACK_SPEED 				200
+..\Driver\Driver_Chassis.h(14): warning:  #47-D: incompatible redefinition of macro "LOW_LEFT_RIGHT_SPEED"  (declared at line 27 of "..\MDK-ARM\Commondefine.h")
+  #define LOW_LEFT_RIGHT_SPEED   				150
+..\Driver\Driver_FriMotor.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\IOTask.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\ControlTask.c(60): warning:  #1-D: last line of file ends without a newline
+  }
+..\Src\ControlTask.c: 5 warnings, 0 errors
+compiling main.c...
+..\Driver\DM9015.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\main.c: 1 warning, 0 errors
+compiling stm32f4xx_it.c...
+..\Driver\DM9015.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Src\stm32f4xx_it.c: 1 warning, 0 errors
+compiling Driver_FriMotor.c...
+..\Driver\Driver_FriMotor.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Driver\Driver_FriMotor.c(276): warning:  #1-D: last line of file ends without a newline
+  }
+..\Driver\Driver_FriMotor.c: 2 warnings, 0 errors
+compiling DM9015.C...
+..\Driver\DM9015.h(31): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Driver\DM9015.C(29): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  		if(bufferPop(&Que_DMfold,frame_temp_DM) == 0x3E)  
+..\Driver\DM9015.C(31): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  			buffer_multiPop(&Que_DMfold, &frame_temp_DM[1],6);
+..\Driver\DM9015.C(35): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  			if(bufferPop(&Que_DMfold,&frame_temp_DM[7]) ==sum&0xff )	
+..\Driver\DM9015.C(39): warning:  #167-D: argument of type "volatile Encoder *" is incompatible with parameter of type "Encoder *"
+  				DM_EncoderProcess(&GMYawEncoder);
+..\Driver\DM9015.C(25): warning:  #177-D: variable "Ecoder"  was declared but never referenced
+  	static int16_t Ecoder;
+..\Driver\DM9015.C(121): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  	buffer_multiPop(&Que_DM_Tx, DM_DMA_BUFF, Bufferl_len);//从队列中取出所有数据
+..\Driver\DM9015.C(122): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+  	HAL_UART_Transmit(&huart2, DM_DMA_BUFF, Bufferl_len,10);//启用DMA发送  串口待定huartx
+..\Driver\DM9015.C(158): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  	buffer_multiPop(&Que_DM_Tx, DM_DMA_BUFF, Bufferl_len);//从队列中取出所有数据
+..\Driver\DM9015.C(159): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+  	HAL_UART_Transmit(&huart2, DM_DMA_BUFF, Bufferl_len,10);//启用DMA发送  串口待定huartx
+..\Driver\DM9015.C(200): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  	buffer_multiPop(&Que_DM_Tx, DM_DMA_BUFF, Bufferl_len);//从队列中取出所有数据
+..\Driver\DM9015.C(201): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+  	HAL_UART_Transmit(&huart2, DM_DMA_BUFF, Bufferl_len,10);//启用DMA发送  串口待定huartx
+..\Driver\DM9015.C(248): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "unsigned char *"
+  	buffer_multiPop(&Que_DM_Tx, DM_DMA_BUFF, Bufferl_len);//从队列中取出所有数据
+..\Driver\DM9015.C(249): warning:  #167-D: argument of type "int8_t *" is incompatible with parameter of type "uint8_t *"
+  	HAL_UART_Transmit(&huart2, DM_DMA_BUFF, Bufferl_len,10);//启用DMA发送  串口待定huartx
+..\Driver\DM9015.C(251): warning:  #1-D: last line of file ends without a newline
+  }
+..\Driver\DM9015.C: 15 warnings, 0 errors
+compiling Driver_Protocol.c...
+..\Driver\Driver_FriMotor.h(35): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Driver\Driver_Chassis.h(13): warning:  #47-D: incompatible redefinition of macro "LOW_FORWARD_BACK_SPEED"  (declared at line 26 of "..\MDK-ARM\Commondefine.h")
+  #define LOW_FORWARD_BACK_SPEED 				200
+..\Driver\Driver_Chassis.h(14): warning:  #47-D: incompatible redefinition of macro "LOW_LEFT_RIGHT_SPEED"  (declared at line 27 of "..\MDK-ARM\Commondefine.h")
+  #define LOW_LEFT_RIGHT_SPEED   				150
+..\Src\IOTask.h(119): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\Driver\Driver_Protocol.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=47224 RO-data=1148 RW-data=1808 ZI-data=23904  
+"Chassic3.0\Chassic3.0" - 0 Error(s), 36 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.3.0.pack
+                ARM::CMSIS:CORE:5.1.1
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.1
+
+<h2>Collection of Component include folders:</h2>
+  D:\123\RM\英雄\功能模块\测试\Shoot\Chassic3.0\MDK-ARM\RTE\_Chassic3.0
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\Keil\Keil.STM32F4xx_DFP.2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.1
+Build Time Elapsed:  00:00:25
+</pre>
+</body>
+</html>
